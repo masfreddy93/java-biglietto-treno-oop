@@ -7,9 +7,9 @@ public class Biglietteria {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Inserire km: ");
+		System.out.print("Inserire km: ");
 		int km = sc.nextInt();
-		System.out.println("Inserire età: ");
+		System.out.print("\nInserire età: ");
 		int age = sc.nextInt();
 		
 		sc.close();
