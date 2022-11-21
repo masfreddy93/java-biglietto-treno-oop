@@ -4,31 +4,10 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Biglietto {
-
 	
-	/* Alla classe Biglietto aggiungere i seguenti attributi:
-		- data: LocalDate
-		- flessibile: boolean
-		Entrambi gli attributi vanno valorizzati nel costruttore.
-
-		Aggiungere due costanti:
-		- durata normale: 30 giorni (int)
-		- durata flessibile: 90 giorni (int) 
-		
-		Aggiungere un metodo (calcolaDataScadenza: *LocalDate*) che calcola 
-		la data di scadenza del biglietto, applicando la durata 
-		normale o flessibile in base al parametro flessibile(boolean).
-		Nel metodo che calcola il prezzo, se il biglietto è flessibile, 
-		maggiorare il prezzo del 10%.
-		
-		
-		*/
 	
 	static final BigDecimal EURO_PER_KM = new BigDecimal(0.21);
-//	static final BigDecimal EURO_PER_KM = 0.21;
-//	static final BigDecimal DISCOUNT_OVER_65 = 40;
 	static final BigDecimal DISCOUNT_OVER_65 = new BigDecimal(40);
-//	static final BigDecimal DISCOUNT_UNDER_18 = 20;
 	static final BigDecimal DISCOUNT_UNDER_18 = new BigDecimal(20);
 	static final int NORMAL_DURATION = 30;
 	static final int FLEXIBLE_DURATION = 90;
@@ -46,18 +25,6 @@ public class Biglietto {
 		flessible = true;
 	}
 	
-	public LocalDate calcolaDataScadenza() {
-		
-		LocalDate dataScadenza;
-		if(isFlessible() == true) {
-			dataScadenza = getDate().plusDays(NORMAL_DURATION);
-		}else {
-			dataScadenza = getDate().plusDays(FLEXIBLE_DURATION);
-		}
-		
-		return dataScadenza;
-	}
-	
 	
 	public int getKm() {
 		return this.km;
@@ -65,11 +32,9 @@ public class Biglietto {
 	public void setKm(int km) {
 		this.km = km;
 	}
-
 	public int getAge() {
 		return age;
 	}
-
 	public void setAge(int age) {
 		this.age = age;
 	}
@@ -77,18 +42,12 @@ public class Biglietto {
 	public LocalDate getDate() {
 		return date;
 	}
-
-
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
-
-
 	public boolean isFlessible() {
 		return flessible;
 	}
-
-
 	public void setFlessible(boolean flessible) {
 		this.flessible = flessible;
 	}
@@ -96,7 +55,6 @@ public class Biglietto {
 
 	public void isValidKm(int km) throws Exception {
 		
-//		BigDecimal comp = new BigDecimal(0);
 		if(km <= 0)
 			throw new Exception("Km must be bigger than 0!");
 		
@@ -145,15 +103,28 @@ public class Biglietto {
 	
 	
 	
+	public LocalDate calcolaDataScadenza() {
+		
+		LocalDate dataScadenza;
+		if(isFlessible() == true) {
+			dataScadenza = getDate().plusDays(NORMAL_DURATION);
+		}else {
+			dataScadenza = getDate().plusDays(FLEXIBLE_DURATION);
+		}
+		
+		return dataScadenza;
+	}
+	
+	
 	@Override
 	public String toString() {
 		
 		return 
-				"Km: " +getKm()
+				"\nKm: " +getKm()
 				+ "\nAge: " +getAge()
 				+ "\nPrezzo biglietto: " + calcolaPrezzo()
 				+ "\nData biglietto: " + getDate()
-				+ "\n Flessibile: " + isFlessible() 
-				+ "\n Data scadenza: " + calcolaDataScadenza();
+				+ "\nFlessibile: " + isFlessible() 
+				+ "\nData scadenza: " + calcolaDataScadenza();
 	}
 }
