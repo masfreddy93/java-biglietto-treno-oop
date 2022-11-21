@@ -51,8 +51,9 @@ public class Biglietto {
 		LocalDate dataScadenza;
 		if(isFlessible() == true) {
 			dataScadenza = getDate().plusDays(NORMAL_DURATION);
+		}else {
+			dataScadenza = getDate().plusDays(FLEXIBLE_DURATION);
 		}
-		dataScadenza = getDate().plusDays(FLEXIBLE_DURATION);
 		
 		return dataScadenza;
 	}
