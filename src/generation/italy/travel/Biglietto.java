@@ -93,6 +93,7 @@ public class Biglietto {
 		
 		return 
 				"Km: " +getKm()
-				+ "\nAge: " +getAge();
+				+ "\nAge: " +getAge()
+				+ "\nPrezzo biglietto: " + calcolaPrezzo();
 	}
 }

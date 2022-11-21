@@ -1,19 +1,26 @@
 package generation.italy.travel;
 
-import java.math.BigDecimal;
+import java.util.Scanner;
 
-public class Main {
+public class Biglietteria {
 	
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Inserire km: ");
+		int km = sc.nextInt();
+		System.out.println("Inserire età: ");
+		int age = sc.nextInt();
+		
+		sc.close();
+		
 		System.out.println("START");
 		
+		
 		try {
-			Biglietto b = new Biglietto(10, 10);			
+			Biglietto b = new Biglietto(km, age);			
 			String res = b.toString();
 			System.out.println(res);
-			System.out.println("Sconto over 65: " + b.DISCOUNT_OVER_65);
-			System.out.println("Prezzo biglietto: " + b.calcolaPrezzo());
 		}catch(Exception e){
 			System.err.println(e.getMessage());
 		}
