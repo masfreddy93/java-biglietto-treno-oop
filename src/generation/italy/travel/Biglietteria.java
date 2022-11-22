@@ -1,5 +1,6 @@
 package generation.italy.travel;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
@@ -47,8 +48,8 @@ public class Biglietteria {
 			for(int i = 0; i < biglietti.length; i++) {
 				
 				Biglietto b = biglietti[i];
-				myWriter.write(b.toString() + "\n");
-//				myWriter.append(b.toString() + "\n"); //is the same of above line??
+//				myWriter.write(b.toString() + "\n");
+				myWriter.append(b.toString() + "\n------------"); //is the same of above line??
 			}
 		} catch (Exception e) {
 //			
@@ -66,10 +67,32 @@ public class Biglietteria {
 		}
 		
 		
+		Scanner fileSc = null;
+		
+		try {
+
+			File f = new File("./biglietti.txt");
+			fileSc = new Scanner(f);
+			
+			while(fileSc.hasNextLine()) {
+				
+				String line = fileSc.nextLine();
+				System.out.println(line);
+			}
+			
+		} catch(Exception e) {
+			
+			System.err.println(e.getMessage());
+		} finally {
+			
+			fileSc.close();
+		}
+		
+		
 		
 		System.out.println("START");  //inizio esecuzione
 		
-		System.out.println(Arrays.toString(biglietti)); //stampa array
+//		System.out.println(Arrays.toString(biglietti)); //stampa array
 					
 		System.out.println("THE END"); //fine esecuzione
 	}

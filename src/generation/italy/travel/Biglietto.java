@@ -21,7 +21,8 @@ public class Biglietto {
 		
 		isValidKm(km);
 		isValidAge(age);
-		date = LocalDate.of(2022, 10, 10);
+//		date = LocalDate.of(2022, 10, 10);
+		date = LocalDate.now();
 		flessible = true;
 	}
 	
@@ -77,6 +78,10 @@ public class Biglietto {
 		finalPrice = EURO_PER_KM.multiply(kmToBigDecimal);
 		finalPrice = finalPrice.subtract(calcolaSconto());
 		
+		
+		if(isFlessible()) {
+			return finalPrice.add(finalPrice.divide(new BigDecimal(10)));
+		}
 		return finalPrice;
 		
 	}
@@ -106,7 +111,7 @@ public class Biglietto {
 	public LocalDate calcolaDataScadenza() {
 		
 		LocalDate dataScadenza;
-		if(isFlessible() == true) {
+		if(isFlessible()) {
 			dataScadenza = getDate().plusDays(NORMAL_DURATION);
 		}else {
 			dataScadenza = getDate().plusDays(FLEXIBLE_DURATION);

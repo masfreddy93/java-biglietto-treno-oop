@@ -47,3 +47,116 @@ Prezzo biglietto: 0.5039999999999999813482531862973701208829879760742187500
 Data biglietto: 2022-10-10
 Flessibile: true
 Data scadenza: 2022-11-09
+
+Km: 100
+Age: 20
+Prezzo biglietto: 23.0999999999999991451282710386294638738036155700683593750
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+
+Km: 100
+Age: 20
+Prezzo biglietto: 23.0999999999999991451282710386294638738036155700683593750
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+
+Km: 100
+Age: 20
+Prezzo biglietto: 20.9999999999999992228438827623904217034578323364257812500
+Data biglietto: 2022-11-22
+Flessibile: false
+Data scadenza: 2023-02-20
+
+Km: 100
+Age: 20
+Prezzo biglietto: 20.9999999999999992228438827623904217034578323364257812500
+Data biglietto: 2022-11-22
+Flessibile: false
+Data scadenza: 2023-02-20
+
+Km: 100
+Age: 20
+Prezzo biglietto: 23.0999999999999991451282710386294638738036155700683593750
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+
+Km: 100
+Age: 25
+Prezzo biglietto: 23.0999999999999991451282710386294638738036155700683593750
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+
+Km: 1233
+Age: 23
+Prezzo biglietto: 284.82299999999998945943158190630128956399857997894287109375
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 212
+Age: 3
+Prezzo biglietto: 39.1775999999999985501375476815155707299709320068359375000
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 100
+Age: 20
+Prezzo biglietto: 23.0999999999999991451282710386294638738036155700683593750
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 123
+Age: 2
+Prezzo biglietto: 22.7303999999999991588062187020113924518227577209472656250
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 100
+Age: 20
+Prezzo biglietto: 23.0999999999999991451282710386294638738036155700683593750
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 120
+Age: 24
+Prezzo biglietto: 27.7199999999999989741539252463553566485643386840820312500
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 123
+Age: 23
+Prezzo biglietto: 28.41299999999999894850777337751424056477844715118408203125
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 393
+Age: 64
+Prezzo biglietto: 90.78299999999999664035410518181379302404820919036865234375
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 102
+Age: 34
+Prezzo biglietto: 23.5619999999999991280308364594020531512796878814697265625
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
+Km: 29273
+Age: 34
+Prezzo biglietto: 6762.06299999999974975339878113800295977853238582611083984375
+Data biglietto: 2022-11-22
+Flessibile: true
+Data scadenza: 2022-12-22
+------------
